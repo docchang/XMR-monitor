@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace XMR_monitor
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-        }
+
+
+
+
+
+      Debug.WriteLine(JsonConvert.SerializeObject(HashParser.Parse()));
+
     }
+  }
 }
